@@ -1,5 +1,5 @@
 data "template_file" "user_data" {
-  template = file("/nginx.sh")
+  template = file("nginx.sh")
 }
 
 resource "aws_instance" "WebServer" {
